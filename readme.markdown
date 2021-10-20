@@ -1,4 +1,4 @@
-***NOTE**: This fork patches an issue that prevents runtime memory errors when the library is compiled to WebAssembly with Emscripten. Otherwise it's the same as the upstream version from KORG.*
+***NOTE**: This fork resolves an issue that would cause runtime memory errors when the library was compiled to WebAssembly with Emscripten. Otherwise it's the same as the upstream version from KORG.*
 
 ## 1. Intro
 This section will help you get to grips with the KORG SYRO library. It shows how the functions can be used to generate syrostream (the audio signal that the volca sample understands) from syrodata (the raw data you want to send - sample audio or sequence patterns).  
