@@ -14,7 +14,7 @@ Good luck and have fun!
 there is a visual studio 2010 project file and Makefile for gcc or clang.  
 **pattern :** definitions for pattern data structure and functions to initialize pattern data.  
 **alldata :** data for restoring factory preset samples or for deleting all sample data.  
-**vosyr2syro.sh :** a bash script (for linux systems) to convert syro wav files from a vosyr project
+**vosyr2syro.sh :** a bash script (for linux systems) to convert a vosyr project to syro wav files 
 
 ***
 
