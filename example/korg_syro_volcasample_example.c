@@ -11,7 +11,7 @@
 #include "../syro/korg_syro_volcasample.h"
 #include "../syro/korg_syro_comp.h"
 
-#define	MAX_SYRO_DATA	10
+#define	MAX_SYRO_DATA	200
 
 static const uint8_t wav_header[] = {
 	'R' , 'I' , 'F',  'F',		// 'RIFF'
