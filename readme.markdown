@@ -1,7 +1,9 @@
-***NOTE**: This fork provides a bash script to convert vosyr projects to WAV files and also removes the limit of max 10 samples in korg_syro_volcasample_example. Furthermore, this fork resolves an issue that would cause runtime memory errors when the library was compiled to WebAssembly with Emscripten. Otherwise it's the same as the upstream version from KORG.*
+***NOTE**: This fork provides a bash script to convert vosyr projects to syro WAV files and also removes the limit of max 10 samples in korg_syro_volcasample_example. Furthermore, this fork resolves an issue that would cause runtime memory errors when the library was compiled to WebAssembly with Emscripten. Otherwise it's the same as the upstream version from KORG.*
 
 ## 1. Intro
-This section will help you get to grips with the KORG SYRO library. It shows how the functions can be used to generate syrostream (the audio signal that the volca sample understands) from syrodata (the raw data you want to send - sample audio or sequence patterns).  
+This section will help you get to grips with the KORG SYRO library. It shows how the functions can be used to generate syrostream (the audio signal that the volca sample understands) from syrodata (the raw data you want to send - sample audio or sequence patterns). 
+
+The original code from korg (from 2014) has now been slightly enhanced with the aim to substitute vosyr on linux running under wine, as vosyr is (for me) no longer able to transfer data correctly to the volca sample, resulting in frequent data errors (maybe due to switching to pipewire in ubuntu). With the help of a rather simple bash script, the example application "korg_syro_volcasample_example" is now able to understand vosyr projects (but ignoring the .vsj project file) and will create syro WAV files for both samples and patterns/sequences in the correct order, which can then be transferred manually to a volca sample, with the help of an appropriate audio player (like alsa's aplay). Additionally, a further syro WAV is generated to delete all samples on a volca sample (freeing up memory prior to transferring new samples prevents out-of-memory errors on the volca sample, but requires firmware 1.2 or newer).
 
 Good luck and have fun!
 
