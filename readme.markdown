@@ -1,4 +1,4 @@
-***NOTE**: This fork provides a bash script to convert vosyr projects to syro WAV files and also removes the limit of max 10 samples in korg_syro_volcasample_example. Furthermore, this fork resolves an issue that would cause runtime memory errors when the library was compiled to WebAssembly with Emscripten. Otherwise it's the same as the upstream version from KORG.*
+***NOTE**: This fork provides a bash script to convert vosyr projects to syro WAV files and also removes the limit of max 10 samples in korg_syro_volcasample_example. New builds for linux are included (at ./examples/execute_gnulinux/) as well. Furthermore, this fork resolves an issue that would cause runtime memory errors when the library was compiled to WebAssembly with Emscripten. Otherwise it's the same as the upstream version from KORG.*
 
 ## 1. Intro
 This section will help you get to grips with the KORG SYRO library. It shows how the functions can be used to generate syrostream (the audio signal that the volca sample understands) from syrodata (the raw data you want to send - sample audio or sequence patterns). 
@@ -11,7 +11,7 @@ Good luck and have fun!
 
 ## 2. what's inside the SDK?
 **syro :** syro itself. It generates syrostream from syrodata.  
-**example :** examples using syro that creates a syro wav file from an audio sample  
+**example :** examples using syro that creates a syro wav file from an audio sample. 
 **project :** contains the project files to build the examples.  
 there is a visual studio 2010 project file and Makefile for gcc or clang.  
 **pattern :** definitions for pattern data structure and functions to initialize pattern data.  
